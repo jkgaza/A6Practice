@@ -48,11 +48,16 @@ app.post("/students", (req, res) => {
   res.json(students);
 });
 
-app.delete("/cart-items/:id", (req, res) => {
-  const cartItem = cart.findIndex(item => item.id == req.params.id);
-  cart.splice(cartItem, 1);
-  res.status(204);
-  res.json("Deleting cart item");
+app.delete("/students/:id", (req, res) => {
+  const blasterStudent = students.findIndex(item => item.id == req.params.id);
+  if (!blasterStudent) {
+    res.status(400);
+    res.json("Bad Request");
+  } else {
+    student.splice(blasterStudent, 1);
+    res.status(200);
+    res.json("Shot down over the Degoba system");
+  }
 });
 
 module.exports = students;
