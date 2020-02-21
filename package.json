@@ -1,0 +1,23 @@
+{
+  "name": "a6practice",
+  "version": "1.0.0",
+  "description": "Practice for assessment 6",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkgaza/A6Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkgaza/A6Practice/issues"
+  },
+  "homepage": "https://github.com/jkgaza/A6Practice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
