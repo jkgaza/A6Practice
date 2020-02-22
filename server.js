@@ -6,7 +6,7 @@ const students = require("./students");
 const app = express();
 const port = 3000;
 
-module.import = students;
+// module.import = students;
 
 app.use(express.json());
 app.listen(port, () => {
