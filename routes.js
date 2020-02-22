@@ -38,7 +38,7 @@ app.get("/students/last-name/:last-name", (req, res) => {
 
 ///
 
-app.put("/students", (req, res) => {
+app.put("/students/:id", (req, res) => {
   res.status(200);
   res.json(students);
 });
@@ -48,6 +48,7 @@ app.post("/students", (req, res) => {
   res.json(students);
 });
 
+///I think this one is okay?
 app.delete("/students/:id", (req, res) => {
   const blasterStudent = students.findIndex(item => item.id == req.params.id);
   if (!blasterStudent) {
